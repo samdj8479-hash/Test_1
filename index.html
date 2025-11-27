@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Beginnings - Orbital Game</title>
+    <title>Neon Jumper - Orbital Game</title>
     <style>
         * {
             margin: 0;
@@ -65,7 +66,8 @@
             color: #ccc;
         }
 
-        .lang, .sound {
+        .lang,
+        .sound {
             cursor: pointer;
             font-size: 14px;
             background: none;
@@ -261,8 +263,15 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .section-title {
@@ -392,7 +401,7 @@
             width: 100%;
             height: 100%;
             border-radius: 50%;
-            background: 
+            background:
                 radial-gradient(circle at 50% 0%, transparent 88%, #f0f0f0 88%, #f0f0f0 95%, transparent 95%),
                 radial-gradient(circle at 93% 7%, transparent 88%, #f0f0f0 88%, #f0f0f0 95%, transparent 95%),
                 radial-gradient(circle at 100% 50%, transparent 88%, #f0f0f0 88%, #f0f0f0 95%, transparent 95%),
@@ -528,31 +537,36 @@
         }
 
         @keyframes pulse {
-            0%, 100% {
+
+            0%,
+            100% {
                 opacity: 1;
             }
+
             50% {
                 opacity: 0.5;
             }
         }
     </style>
+
 </head>
+
 <body>
     <div class="sidebar-overlay" id="sidebarOverlay"></div>
-    
+
     <div class="sidebar" id="sidebar">
         <div class="sidebar-title">Games</div>
         <div class="game-item active">
-            <div class="game-item-title">The Beginnings</div>
+            <div class="game-item-title">Neon Jumper</div>
             <div class="game-item-desc">Orbital jumping game</div>
         </div>
-        <div class="game-item locked">
-            <div class="game-item-title">The Ascent</div>
-            <div class="game-item-desc">Coming soon...</div>
+        <div class="game-item" onclick="location.href='neonsnake.html'">
+            <div class="game-item-title">Neon Snake</div>
+            <div class="game-item-desc">Classic Snake Game</div>
         </div>
-        <div class="game-item locked">
-            <div class="game-item-title">The Journey</div>
-            <div class="game-item-desc">Coming soon...</div>
+        <div class="game-item" onclick="location.href='neon-stacker.html'">
+            <div class="game-item-title">Neon Stacker</div>
+            <div class="game-item-desc">Rhythm stacking game</div>
         </div>
         <div class="game-item locked">
             <div class="game-item-title">The Final</div>
@@ -567,7 +581,8 @@
             <button class="lang">EN</button>
             <button class="sound">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+                    <path
+                        d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z" />
                 </svg>
             </button>
         </div>
@@ -610,10 +625,12 @@
                         padding: 30px;
                         margin-bottom: 30px;
                     }
+
                     #theory .infographic-section:hover {
                         background-color: rgba(80, 80, 80, 0.4);
                         border-color: #777;
                     }
+
                     #theory .infographic-title {
                         font-size: 1.5rem;
                         letter-spacing: 3px;
@@ -623,11 +640,13 @@
                         border-bottom: 1px solid #555;
                         padding-bottom: 10px;
                     }
+
                     #theory .infographic-content {
                         color: #ccc;
                         font-size: 0.95rem;
                         line-height: 1.8;
                     }
+
                     #theory .highlight-box {
                         display: flex;
                         align-items: center;
@@ -635,16 +654,19 @@
                         flex-wrap: wrap;
                         gap: 30px;
                     }
+
                     #theory .stat-number {
                         font-size: 5rem;
                         font-weight: bold;
                         color: #f0f0f0;
                     }
+
                     #theory .stat-label {
                         font-size: 1.2rem;
                         color: #888;
                         letter-spacing: 2px;
                     }
+
                     #theory .chart-container {
                         position: relative;
                         width: 100%;
@@ -655,12 +677,14 @@
                         padding: 20px;
                         border: 1px solid #555;
                     }
+
                     #theory .tech-box {
                         background-color: rgba(70, 70, 70, 0.5);
                         border: 1px solid #666;
                         padding: 20px;
                         margin-bottom: 15px;
                     }
+
                     #theory .tech-box h3 {
                         font-size: 1.1rem;
                         letter-spacing: 2px;
@@ -668,17 +692,21 @@
                         color: #f0f0f0;
                         text-transform: uppercase;
                     }
+
                     #theory table {
                         width: 100%;
                         border-collapse: collapse;
                         margin: 20px 0;
                         background-color: rgba(60, 60, 60, 0.3);
                     }
-                    #theory th, #theory td {
+
+                    #theory th,
+                    #theory td {
                         padding: 15px;
                         text-align: left;
                         border: 1px solid #555;
                     }
+
                     #theory th {
                         background-color: rgba(80, 80, 80, 0.5);
                         font-weight: bold;
@@ -686,6 +714,7 @@
                         text-transform: uppercase;
                         font-size: 0.9rem;
                     }
+
                     #theory .flow-step {
                         background-color: rgba(70, 70, 70, 0.5);
                         border: 2px solid #777;
@@ -694,6 +723,7 @@
                         max-width: 600px;
                         text-align: center;
                     }
+
                     #theory .flow-arrow {
                         text-align: center;
                         font-size: 2rem;
@@ -707,7 +737,9 @@
                     <div class="infographic-content">
                         <div class="highlight-box">
                             <div style="flex: 1; min-width: 300px;">
-                                <p>이 연구는 게임 디자인에서 플레이어의 학습과 적응을 의도적으로 방해하는 '반-적응형 AI'의 개념을 제안합니다. 기존 DDA(Dynamic Difficulty Adjustment)가 플레이어를 편안한 몰입 상태로 유지하려 했다면, 반-적응형 AI는 플레이어의 고착된 패턴을 깨뜨리고 끊임없는 재평가를 유도합니다.</p>
+                                <p>이 연구는 게임 디자인에서 플레이어의 학습과 적응을 의도적으로 방해하는 '반-적응형 AI'의 개념을 제안합니다. 기존 DDA(Dynamic
+                                    Difficulty Adjustment)가 플레이어를 편안한 몰입 상태로 유지하려 했다면, 반-적응형 AI는 플레이어의 고착된 패턴을 깨뜨리고 끊임없는
+                                    재평가를 유도합니다.</p>
                             </div>
                             <div class="highlight-stat">
                                 <div class="stat-number">∞</div>
@@ -725,7 +757,7 @@
                     <p class="infographic-content" style="text-align: center; margin-top: 20px;">
                         <strong>DDA (Dynamic Difficulty Adjustment)</strong>: 플레이어 실력에 맞춰 난이도를 조절하여 "Flow" 상태를 유지
                     </p>
-                    
+
                     <div class="chart-container">
                         <canvas id="antiDdaChart"></canvas>
                     </div>
@@ -746,7 +778,7 @@
                             <p>NPC 대화, 퀘스트 목표, 스토리 분기를 동적으로 생성하여 플레이어의 선택에 따라 게임이 진화합니다.</p>
                         </div>
                     </div>
-                    
+
                     <div class="chart-container" style="max-width: 400px;">
                         <canvas id="techDonutChart"></canvas>
                     </div>
@@ -792,39 +824,43 @@
                     <p class="infographic-content" style="text-align: center; margin-bottom: 30px;">
                         이 시스템은 지속적인 피드백 루프로 작동합니다.
                     </p>
-                    
+
                     <div class="flow-step">
                         <div style="font-size: 0.75rem; color: #888; margin-bottom: 5px;">STEP 1</div>
-                        <div style="font-size: 1.2rem; margin-bottom: 10px; text-transform: uppercase;">SENSE: Player Action</div>
+                        <div style="font-size: 1.2rem; margin-bottom: 10px; text-transform: uppercase;">SENSE: Player
+                            Action</div>
                         <div style="font-size: 0.85rem; color: #aaa;">플레이어 행동 데이터 수집</div>
                     </div>
 
                     <div class="flow-arrow">↓</div>
-                    
+
                     <div class="flow-step">
                         <div style="font-size: 0.75rem; color: #888; margin-bottom: 5px;">STEP 2</div>
-                        <div style="font-size: 1.2rem; margin-bottom: 10px; text-transform: uppercase;">DETECT: Pattern Analysis</div>
+                        <div style="font-size: 1.2rem; margin-bottom: 10px; text-transform: uppercase;">DETECT: Pattern
+                            Analysis</div>
                         <div style="font-size: 0.85rem; color: #aaa;">AI가 반복 패턴을 감지</div>
                     </div>
 
                     <div class="flow-arrow">↓</div>
-                    
+
                     <div class="flow-step">
                         <div style="font-size: 0.75rem; color: #888; margin-bottom: 5px;">STEP 3</div>
-                        <div style="font-size: 1.2rem; margin-bottom: 10px; text-transform: uppercase;">TRANSFORM: Environment Change</div>
+                        <div style="font-size: 1.2rem; margin-bottom: 10px; text-transform: uppercase;">TRANSFORM:
+                            Environment Change</div>
                         <div style="font-size: 0.85rem; color: #aaa;">PCG/LLM으로 게임 세계 변경</div>
                     </div>
 
                     <div class="flow-arrow">↓</div>
-                    
+
                     <div class="flow-step">
                         <div style="font-size: 0.75rem; color: #888; margin-bottom: 5px;">STEP 4</div>
-                        <div style="font-size: 1.2rem; margin-bottom: 10px; text-transform: uppercase;">CHALLENGE: Force Adaptation</div>
+                        <div style="font-size: 1.2rem; margin-bottom: 10px; text-transform: uppercase;">CHALLENGE: Force
+                            Adaptation</div>
                         <div style="font-size: 0.85rem; color: #aaa;">플레이어는 새로운 전략 필요</div>
                     </div>
 
                     <div class="flow-arrow">↓</div>
-                    
+
                     <div class="flow-step">
                         <div style="font-size: 0.75rem; color: #888; margin-bottom: 5px;">LOOP</div>
                         <div style="font-size: 1.2rem; text-transform: uppercase;">Return to STEP 1</div>
@@ -834,7 +870,8 @@
                 <div class="infographic-section">
                     <h2 class="infographic-title">Conclusion</h2>
                     <p class="infographic-content">
-                        '반-적응형 AI'는 게임의 수명을 연장하고 예측 불가능한 경험을 제공하는 새로운 디자인 철학입니다. 게임이 단순히 '풀리는 퍼즐'에서 벗어나 끊임없이 진화하는 살아있는 세계로 변모할 수 있는 가능성을 제시합니다.
+                        '반-적응형 AI'는 게임의 수명을 연장하고 예측 불가능한 경험을 제공하는 새로운 디자인 철학입니다. 게임이 단순히 '풀리는 퍼즐'에서 벗어나 끊임없이 진화하는 살아있는
+                        세계로 변모할 수 있는 가능성을 제시합니다.
                     </p>
                 </div>
 
@@ -968,21 +1005,26 @@
             <div class="tab-content" id="story">
                 <div class="section-title">The Story</div>
                 <div class="section-content">
-                    When his son struggles to beat a challenging game, a confident father steps in. "Don't worry, I'll clear it for you." But what seemed simple turns into an all-night battle of determination.
+                    When his son struggles to beat a challenging game, a confident father steps in. "Don't worry, I'll
+                    clear it for you." But what seemed simple turns into an all-night battle of determination.
                 </div>
-                <div class="content-placeholder" style="cursor: pointer;" onclick="window.open('https://gemini.google.com/share/2f6d4e16aa0e', '_blank')">
+                <div class="content-placeholder" style="cursor: pointer;"
+                    onclick="window.open('https://gemini.google.com/share/2f6d4e16aa0e', '_blank')">
                     <div class="placeholder-text">📖 View Storybook</div>
-                    <div class="placeholder-text" style="margin-top: 10px; font-size: 12px;">Click to read the full story</div>
+                    <div class="placeholder-text" style="margin-top: 10px; font-size: 12px;">Click to read the full
+                        story</div>
                 </div>
                 <div class="section-content">
-                    A heartwarming tale of a father's pride, unexpected difficulty, and the sunrise that finally comes after a long night of gaming. Sometimes, being a hero for your son takes more than you expect.
+                    A heartwarming tale of a father's pride, unexpected difficulty, and the sunrise that finally comes
+                    after a long night of gaming. Sometimes, being a hero for your son takes more than you expect.
                 </div>
             </div>
         </div>
     </div>
+    <title>Neon Jumper - Orbital Game</title>
 
     <div class="content">
-        <h1 class="title">The Beginnings</h1>
+        <h1 class="title">Neon Jumper</h1>
         <p class="description">
             Press SPACE to jump • Avoid the spikes
         </p>
@@ -990,10 +1032,10 @@
 
     <div class="game-container" id="gameContainer">
         <div class="score" id="score">0</div>
-        
+
         <div class="main-circle"></div>
         <div class="player" id="player"></div>
-        
+
         <div id="character-container"></div>
         <div class="start-message" id="startMessage">Click to Start</div>
 
@@ -1072,7 +1114,7 @@
                 const baseAngle = spikeData.angle;
                 const stack = spikeData.stackCount || 1;
                 const groupId = Math.random().toString(36);
-                
+
                 for (let k = 0; k < stack; k++) {
                     const angleOffset = (k - (stack - 1) / 2) * 6;
                     const spike = {
@@ -1096,7 +1138,7 @@
                     spike.element.style.borderLeft = spike.halfWidth + 'px solid transparent';
                     spike.element.style.borderRight = spike.halfWidth + 'px solid transparent';
                     spike.element.style.borderBottom = spike.height + 'px solid #f0f0f0';
-                    
+
                     spikes.push(spike);
                     updateSpikePosition(spike);
                 }
@@ -1127,13 +1169,13 @@
             const centerX = 300;
             const centerY = 300;
             const spikeDistance = radius - 1;
-            
+
             const x = centerX + Math.cos(spike.angle * Math.PI / 180) * spikeDistance;
             const y = centerY + Math.sin(spike.angle * Math.PI / 180) * spikeDistance;
-            
+
             spike.element.style.left = (x - spike.halfWidth) + 'px';
             spike.element.style.top = (y - spike.height) + 'px';
-            
+
             const scaleValue = spike.isExtended ? 1 : 0;
             spike.element.style.transform = `rotate(${spike.angle + 90}deg) scale(${scaleValue})`;
         }
@@ -1163,13 +1205,13 @@
         function updatePlayerPosition() {
             const centerX = 300;
             const centerY = 300;
-            
+
             const jumpOffset = jumpLevel === 0 ? 0 : (jumpLevel === 1 ? 42 : (jumpLevel === 2 ? 70 : 95));
             const distance = playerDistance + jumpOffset;
-            
+
             const x = centerX + Math.cos(angle * Math.PI / 180) * distance - 12;
             const y = centerY + Math.sin(angle * Math.PI / 180) * distance - 12;
-            
+
             player.style.left = x + 'px';
             player.style.top = y + 'px';
         }
@@ -1196,16 +1238,16 @@
         function updateSpikeApproach() {
             const playerAngle = angle % 360;
             const processedGroups = new Set();
-            
+
             spikes.forEach(spike => {
                 if (spike.isExtended) return;
                 if (processedGroups.has(spike.groupId)) return;
-                
+
                 let spikeAngle = spike.angle % 360;
                 let diff = playerAngle - spikeAngle;
                 while (diff > 180) diff -= 360;
                 while (diff < -180) diff += 360;
-                
+
                 if (diff < -12 && diff > -60) {
                     const groupSpikes = spikes.filter(s => s.groupId === spike.groupId);
                     groupSpikes.forEach(groupSpike => {
@@ -1218,22 +1260,22 @@
 
         function checkCollisions() {
             if (isJumping) return false;
-            
+
             const playerAngle = angle % 360;
-            
+
             for (let spike of spikes) {
                 if (!spike.isExtended) continue;
-                
+
                 let spikeAngle = spike.angle % 360;
                 let diff = Math.abs(playerAngle - spikeAngle);
-                
+
                 if (diff > 180) diff = 360 - diff;
-                
+
                 if (diff < 3) {
                     return true;
                 }
             }
-            
+
             return false;
         }
 
@@ -1241,16 +1283,16 @@
             if (isGameOver || !gameStarted) return;
 
             angle += rotationSpeed;
-            
+
             if (angle >= 360) {
                 angle -= 360;
                 lastPatternAngle -= 360;
                 totalRotations++;
-                
+
                 if (!hasCompletedFirstRotation) {
                     hasCompletedFirstRotation = true;
                 }
-                
+
                 updateCircleSize();
 
                 spikes.forEach(spike => {
@@ -1260,7 +1302,7 @@
                 });
                 spikes = [];
             }
-            
+
             updatePlayerPosition();
             updateSpikeApproach();
 
@@ -1290,17 +1332,17 @@
             isGameOver = true;
             gameOverScreen.classList.add('show');
             finalScoreDisplay.textContent = `Score: ${Math.floor(score)}`;
-            
+
             // Update last score and high score
             lastScore = Math.floor(score);
             if (lastScore > highScore) {
                 highScore = lastScore;
             }
-            
+
             // Update display
             document.getElementById('highScore').textContent = highScore;
             document.getElementById('lastScore').textContent = lastScore;
-            
+
             clearInterval(gameLoop);
         }
 
@@ -1310,7 +1352,7 @@
                 clearInterval(gameLoop);
                 gameLoop = null;
             }
-            
+
             isGameOver = false;
             gameStarted = false;
             score = 0;
@@ -1324,22 +1366,22 @@
             totalRotations = 0;
             radius = 220;
             playerDistance = 245;
-            
+
             mainCircle.style.width = (radius * 2) + 'px';
             mainCircle.style.height = (radius * 2) + 'px';
-            
+
             scoreDisplay.textContent = '0';
             gameOverScreen.classList.remove('show');
             startMessage.classList.remove('hidden');
             showCharacter();
-            
+
             spikes.forEach(spike => {
                 if (spike.element) {
                     spike.element.remove();
                 }
             });
             spikes = [];
-            
+
             updatePlayerPosition();
         }
 
@@ -1371,7 +1413,7 @@
             if (e.target.id === 'restartButton' || e.target.closest('.game-over')) {
                 return;
             }
-            
+
             if (!gameStarted && !isGameOver) {
                 startGame();
             } else if (gameStarted && !isGameOver) {
@@ -1379,27 +1421,27 @@
             }
         });
 
-        document.querySelector('.menu-icon').addEventListener('click', function() {
+        document.querySelector('.menu-icon').addEventListener('click', function () {
             const sidebar = document.getElementById('sidebar');
             const overlay = document.getElementById('sidebarOverlay');
             sidebar.classList.toggle('open');
             overlay.classList.toggle('show');
         });
 
-        document.getElementById('sidebarOverlay').addEventListener('click', function() {
+        document.getElementById('sidebarOverlay').addEventListener('click', function () {
             const sidebar = document.getElementById('sidebar');
             const overlay = document.getElementById('sidebarOverlay');
             sidebar.classList.remove('open');
             overlay.classList.remove('show');
         });
 
-        document.querySelector('.lang').addEventListener('click', function() {
+        document.querySelector('.lang').addEventListener('click', function () {
             this.textContent = this.textContent === 'EN' ? 'KOR' : 'EN';
         });
 
         let soundOn = true;
         const soundButton = document.querySelector('.sound');
-        soundButton.addEventListener('click', function() {
+        soundButton.addEventListener('click', function () {
             soundOn = !soundOn;
             if (soundOn) {
                 this.classList.remove('muted');
@@ -1419,22 +1461,22 @@
         });
 
         // About Page Functionality
-        document.getElementById('aboutLink').addEventListener('click', function(e) {
+        document.getElementById('aboutLink').addEventListener('click', function (e) {
             e.preventDefault();
             document.getElementById('aboutPage').classList.add('show');
         });
 
-        document.getElementById('closeAbout').addEventListener('click', function() {
+        document.getElementById('closeAbout').addEventListener('click', function () {
             document.getElementById('aboutPage').classList.remove('show');
         });
 
         // Tab Switching
         document.querySelectorAll('.about-tab').forEach(tab => {
-            tab.addEventListener('click', function() {
+            tab.addEventListener('click', function () {
                 // Remove active class from all tabs
                 document.querySelectorAll('.about-tab').forEach(t => t.classList.remove('active'));
                 document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-                
+
                 // Add active class to clicked tab
                 this.classList.add('active');
                 const targetTab = this.getAttribute('data-tab');
@@ -1453,7 +1495,7 @@
 
         function initCharacter() {
             const container = document.getElementById('character-container');
-            
+
             // Scene
             characterScene = new THREE.Scene();
             characterScene.background = null; // Transparent
@@ -1479,7 +1521,7 @@
 
             // Create character
             createCharacter();
-            
+
             // Start animation
             animateCharacter();
         }
@@ -1489,7 +1531,7 @@
             characterModel.position.y = 1.2;
             characterScene.add(characterModel);
 
-            const material = new THREE.MeshStandardMaterial({ 
+            const material = new THREE.MeshStandardMaterial({
                 color: 0x555555,
                 roughness: 0.6
             });
@@ -1530,14 +1572,14 @@
 
         function animateCharacterWalking() {
             characterWalkTime += 0.05;
-            
+
             // Body bounce
             characterModel.position.y = 1.2 + Math.abs(Math.sin(characterWalkTime * 2)) * 0.08;
-            
+
             // Leg swings
             characterLeftLeg.rotation.x = Math.sin(characterWalkTime) * 0.7;
             characterRightLeg.rotation.x = Math.sin(characterWalkTime + Math.PI) * 0.7;
-            
+
             // Arm swings
             characterLeftArm.rotation.x = Math.sin(characterWalkTime + Math.PI) * 0.6;
             characterRightArm.rotation.x = Math.sin(characterWalkTime) * 0.6;
@@ -1577,4 +1619,5 @@
         });
     </script>
 </body>
+
 </html>
